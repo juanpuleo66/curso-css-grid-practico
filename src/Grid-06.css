@@ -1,0 +1,21 @@
+main {
+    width: 100vw;
+    margin: 0 auto;  
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    color: whitesmoke;
+
+    display: grid;
+    grid-gap: 10px;
+}
+
+div {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

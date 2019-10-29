@@ -1,5 +1,4 @@
 main {
-    display: grid;
     width: 100vw;
     margin: 0 auto;  
     height: 100vh;
@@ -27,6 +26,35 @@ div {
     flex-direction: column;
 }
 
+/* width >= 600px */
+@media (min-width: 600px) { 
+    main {
+        grid-template-areas: 
+        "cabecera cabecera cabecera"
+        "izquierda contenido derecha"
+        "piedepagina piedepagina piedepagina"  
+    }
+}
+
+/* width <= 600px */
+@media (max-width: 600px) { 
+    main {
+        grid-template-areas: 
+        "cabecera cabecera"
+        "izquierda contenido"
+        "derecha piedepagina"  
+    }
+}
+
+/* width >= 400 and width <= 600 */
+@media (max-width: 600px) and (min-width: 400px) {
+    main {
+        grid-template-areas: 
+        "cabecera izquierda"
+        "piedepagina contenido"
+        "piedepagina derecha"  
+    }
+}
 
 .cabecera {
     grid-area: cabecera;
